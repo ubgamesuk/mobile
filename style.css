@@ -10,18 +10,18 @@ body{
     background-color: #000;
 }
 .content{
-    margin-top: 50px;
+    margin-top: 55px;
 }
 .topbar{
     background-color: #0e0e0e;
-    height: 50px;
-    transform: translateY(-50px);
+    height: 55px;
+    transform: translateY(-56px);
     position: fixed;
     width: 100%;
 }
 .topbar .atoz{
     width: 40px;
-    height: 30px;
+    height: 33px;
     font-weight: 500;
     background-color: #2a2a2a;
     color: #fff;
@@ -33,23 +33,24 @@ body{
     transform: translateY(11px);
 }
 .topbar .atoz i{
-    font-size: 20px;
+    font-size: 24px;
+    transform: translateY(1px);
 }
 .topbar .logo{
     margin-left: 20px;
     transform: translateY(5px);
-    height: 40px;
+    height: 44px;
 }
 .gamerow{
     width: 100%;
     display: flex;
 }
 .gamerow .gameimg{
-    height: 110px;
+    height: 125px;
     width: 50%;
     margin-top: 3px;
     padding: 3px;
-    border-radius: 20px;
+    border-radius: 23px;
     object-fit: cover;
 }
 .gamelist{
@@ -89,6 +90,9 @@ body{
     z-index: 1;
     height: 100vh;
 }
+.screensizemessage{
+    display: none;
+}
 ::-webkit-scrollbar {
     width: 10px;
   }
@@ -103,3 +107,48 @@ body{
   ::-webkit-scrollbar-thumb:hover {
     background: #7e7e7e; 
   }
+
+  @media screen and (min-width: 550px) {
+    .content{
+        display: none;
+    }
+    .topbar{
+        display: none;
+    }
+    .gameplay{
+        display: none;
+    }
+    .screensizemessage{
+        display: block;
+        color: #fff;
+        text-align: center;
+        padding-left: 150px;
+        padding-right: 150px;
+        padding-top: 90px;
+    }
+    .screensizemessage h1{
+        font-size: 40px;
+    }
+    .screensizemessage h2{
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 30px;
+    }
+    .screensizemessage .errorlogo{
+        height: 70px;
+    }
+    .screensizemessage h3{
+        margin-top: 20px;
+        font-size: 21px;
+        font-weight: 300;
+    }
+    .screensizemessage .redirect{
+        margin-top: 30px;
+        width: 240px;
+        height: 50px;
+        font-size: 20px;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+}
