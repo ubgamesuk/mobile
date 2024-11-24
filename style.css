@@ -10,18 +10,20 @@ body{
     background-color: #000;
 }
 .content{
-    margin-top: 55px;
+    margin-top: 65px;
 }
 .topbar{
-    background-color: #0e0e0e;
-    height: 55px;
-    transform: translateY(-56px);
+    background-color: #121212;
+    height: 60px;
+    transform: translateY(-66px);
     position: fixed;
     width: 100%;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
 }
 .topbar .atoz{
-    width: 40px;
-    height: 33px;
+    width: 45px;
+    height: 37px;
     font-weight: 500;
     background-color: #2a2a2a;
     color: #fff;
@@ -30,27 +32,27 @@ body{
     border-radius: 10px;
     float: right;
     margin-right: 30px;
-    transform: translateY(11px);
+    transform: translateY(13px);
 }
 .topbar .atoz i{
-    font-size: 24px;
-    transform: translateY(1px);
+    font-size: 26px;
+    transform: translateY(2px);
 }
 .topbar .logo{
     margin-left: 20px;
-    transform: translateY(5px);
-    height: 44px;
+    transform: translateY(7px);
+    height: 48px;
 }
 .gamerow{
     width: 100%;
     display: flex;
 }
 .gamerow .gameimg{
-    height: 125px;
+    height: 135px;
     width: 50%;
     margin-top: 3px;
     padding: 3px;
-    border-radius: 23px;
+    border-radius: 28px;
     object-fit: cover;
 }
 .gamelist{
@@ -58,37 +60,14 @@ body{
 }
 .gamelist .letter{
     color: #fff;
-    font-size: 30px;
+    font-size: 32px;
     padding-top: 20px;
 }
 .gamelist .gamename{
     color: #fff;
-    font-size: 23px;
+    font-size: 26px;
     text-decoration: none;
     display: block;
-}
-.gameplay{
-    position: fixed;
-    width: 100%;
-}
-.gameplay .backbutton{
-    position: fixed;
-    z-index: 99;
-    background-color: #000;
-    margin-top: 15px;
-}
-.gameplay .backicon{
-    height: 46px;
-    z-index: 9;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    position: absolute;
-    outline: solid 1px #ffffff2c;
-}
-.gameplay .game{
-    width: 100%;
-    z-index: 1;
-    height: 100vh;
 }
 .screensizemessage{
     display: none;
