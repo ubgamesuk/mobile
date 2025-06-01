@@ -28,7 +28,17 @@
     </div>
 
 </nav>
-<script src="search.js"></script>
+<div id="loader">
+        <img class="loadingimg" src="images/ubgames.png">
+        </div>
+  <script>
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        document.body.classList.add("loaded");
+      }, 3500);
+    });
+  </script>
+</div>
 
 <section class="mobiledisplay">
 
