@@ -17,6 +17,10 @@
     --tran-04: all 0.3s ease;
     --tran-05: all 0.3s ease;
 }
+html{
+    touch-action: pan-x pan-y;
+    height: 100%;
+}
 body{
     min-height: 100vh;
     background-color: #000;
