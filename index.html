@@ -21,6 +21,17 @@
             <input type="text" id="searchbar" class="search-bar" placeholder="Search 257 games"></div>
 
 </nav>
+<div id="loader">
+        <img class="loadingimg" src="images/ubgames.png">
+        </div>
+  <script>
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        document.body.classList.add("loaded");
+      }, 3400);
+    });
+  </script>
+</div>
 
 
 <section class="mobiledisplay">
