@@ -13,41 +13,24 @@
 <body>
 
 <nav class="topbar">
-    <i onclick="document.location='games-a-z'" id="menuicon" class='bx bx-menu icon'></i>
+    <i onclick="openAtoz()" id="menuicon" class='bx bx-menu icon'></i>
 
     <img onclick="document.location='..'" id="#toplogo" src="images/ubgames.png">
         <div class="form-search">
             <i onclick="doSearch()" id="searchbutton" class='bx bx-search icon'></i>
             <input type="text" id="searchbar" class="search-bar" placeholder="Search 257 games"></div>
 
-    <div class="right-icons">
-        <a href="https://uk.trustpilot.com/review/ubgames.uk">
-            <button class="leftbutton"><i class='bx bxs-star'></i> Leave a review</button></a>
-
-        <button class="azbutton" onclick="document.location='games-a-z'"><i class='bx bxs-joystick'></i> Games A-Z</button>
-    </div>
-
 </nav>
-<div id="loader">
-        <img class="loadingimg" src="images/ubgames.png">
-        </div>
-  <script>
-    window.addEventListener("load", () => {
-      setTimeout(() => {
-        document.body.classList.add("loaded");
-      }, 3500);
-    });
-  </script>
-</div>
+
 
 <section class="mobiledisplay">
 
     <div class="mobiletitletext">
-        <h1 class="mobhometitle">Featured</h1>
+        <h1 class="mobhometitle">Welcome back</h1>
     </div>
 
     <div class="gamerowlong">
-        <img onclick="openGame1()" class="gameimg" src="images/monkmartmoblong.jpg">
+        <img onclick="openGame19()" class="gameimg" src="images/freekickgotm.jpg">
     </div>
     <div class="gamerow">
         <img onclick="openGame2()" class="gameimg" src="images/drivemad.jpg">
@@ -58,7 +41,7 @@
         <img onclick="openGame9()" class="gameimg" src="images/asmallworldcup.jpg">
     </div>
     <div class="gamerow">
-        <img onclick="openGame19()" class="gameimg" src="images/3dfreekick.jpg">
+        <img onclick="openGame1()" class="gameimg" src="images/monkeymart.jpg">
         <img onclick="openGame13()" class="gameimg" src="images/eggycar.jpg">
     </div>
     <div class="gamerow">
@@ -99,6 +82,50 @@
     </div>
     
     </section>
+        <div style="display: none;" id="atozpop" class="azpopup">
+        <div class="topcontrols">
+            <i onclick="closeAtoz()" class='bx  bx-x'></i>
+            <h2>Games A-Z</h2>
+        </div>
+        <div class="azlist">
+            <h1>A</h1>
+            <h2 onclick="openGame9()">A Small World Cup</h2>
+            <h2 onclick="openGame6()">Among Us</h2>
+            <h1>B</h1>
+            <h2 onclick="openGame12()">Basket & Ball</h2>
+            <h2 onclick="openGame8()">BitLife</h2>
+            <h2 onclick="openGame3()">Block Blast</h2>
+            <h2 onclick="openGame18()">Blumgi Soccer</h2>
+            <h1>C</h1>
+            <h2 onclick="openGame10()">Candy Crush</h2>
+            <h2 onclick="openGame11()">Core Ball</h2>
+            <h2 onclick="openGame17()">4 Colours</h2>
+            <h2 onclick="openGame14()">Cut The Rope</h2>
+            <h1>D</h1>
+            <h2 onclick="openGame19()">3D Free Kick</h2>
+            <h2 onclick="openGame2()">Drive Mad</h2>
+            <h1>E</h1>
+            <h2 onclick="openGame13()">Eggy Car</h2>
+            <h1>F</h1>
+            <h2 onclick="openGame4()">Fruit Ninja</h2>
+            <h1>G</h1>
+            <h2 onclick="openGame15()">Getting Over It</h2>
+            <h1>M</h1>
+            <h2 onclick="openGame1()">Monkey Mart</h2>
+            <h1>P</h1>
+            <h2 onclick="openGame20()">Paper.io 2</h2>
+            <h1>C</h1>
+            <h2 onclick="openGame7()">Subway Surfers</h2>
+            <h2 onclick="openGame21()">Sub Surf: Bali</h2>
+            <h2 onclick="openGame22()">Sub Surf: Venice</h2>
+            <h2 onclick="openGame23()">Sub Surf: Winter</h2>
+            <h1>T</h1>
+            <h2 onclick="openGame24()">Tetris</h2>
+            <h2 onclick="openGame5()">Tiny Fishing</h2>
+            <h1>*</h1>
+            <h2 onclick="openGame25()">2048</h2>
+        </div>
+    </div>
     <div id="game1" style="display: none;" class="game">
         <div class="topcontrols">
             <i onclick="closeGame1()" class='bx  bx-x'></i>

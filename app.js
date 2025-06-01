@@ -1,3 +1,19 @@
+        function closeAtoz() {
+      var x = document.getElementById("atozpop");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+        function openAtoz() {
+      var x = document.getElementById("atozpop");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
         function closeGame1() {
       var x = document.getElementById("game1");
       if (x.style.display === "block") {
@@ -284,6 +300,14 @@
         x.style.display = "block";
       } else {
         x.style.display = "none";
+      }
+    }
+        function closeGame19() {
+      var x = document.getElementById("game19");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
       }
     }
             function closeGame20() {
